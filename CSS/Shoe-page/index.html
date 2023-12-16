@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(180, 168, 168);
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        
+        }
+
+        /* individually style implementation  */
+        .container::after{
+            content: "";
+            position: absolute;
+            transform: skewY(10deg);
+            background: linear-gradient(to right, #a83138,#1864bd);
+            z-index: -1;
+             inset: 0;
+
+        }
+
+        .shoe{
+            /* position: relative; */
+            width: 85%;
+            height: 75%;
+            margin: auto;
+            margin-top:120px;
+            background: linear-gradient(to right, rgb(100, 8, 92),#f75b65);
+            box-shadow: #1864bd;
+        }
+
+        .left-description{
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 40%;
+            color: aliceblue;
+            height: 60%;
+            padding-left:2% ;
+        }
+        .left-description h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .shoe-1{
+            position: absolute;
+            width: 600px;
+            height: 250px;
+            right: 40px;
+            top:12%;
+        }
+
+        .shoe-1:hover{
+            right: 0px;
+            top:10px;
+            height: 600px;
+            width: 900px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shoe">
+            <div class="left-description">
+               <h1> Shoe-1 </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at, blanditiis saepe adipisci molestiae neque quisquam perferendis, repudiandae repellendus odio a repellat minus iste sapiente molestias nulla nam, quas perspiciatis!</p>
+                <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore.
+                </p>
+            </div>
+
+            <img src="https://priyanshu-240499.github.io/Assignments-CSS/position/assets/shoe-1.png" alt="shoe" class="shoe-1">
+    
+        </div>
+    </div>
+</body>
+</html>

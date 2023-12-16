@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main h1{
+            color: blue;
+        }
+
+        /* pseudo class  */
+        /* user action  */
+        
+        /* simple pseudo class  */
+        /* .main h1:nth-child(2){
+            color: aquamarine;
+        } */
+
+        /* .main h1:nth-child(2){
+            border: 1px solid grey;
+            display: inline;
+         box-shadow:10px 10px 12px rgba(0, 0, 0, 0.5);  
+        } */
+
+        .main h1:hover{
+            color: rgb(62, 62, 32);
+            box-shadow:10px 10px 12px rgba(183, 27, 27, 0.5); 
+        }
+
+         /* pseudo element  */
+        .main h1::before{
+            content: "Hello ";
+            margin-top: 12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta, exercitationem quis ipsum earum tenetur porro alias possimus inventore nemo iste quo provident, aperiam corrupti, consectetur architecto quaerat. Magnam, hic.</h1>
+        <h1>
+            this is second heading
+        </h1>
+    </div>
+</body>
+</html>
