@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.template-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+  "a a b e"
+  "c d d e";
+
+  padding-block: 2rem;
+  width: 70%;
+  margin-inline: auto;
+}
+
+.template {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.a {
+  grid-area: a;
+  background-color: rgb(83, 50, 135);
+  color: #fff;
+  background-image: url('https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right 3rem;
+}
+.b {
+  grid-area: b;
+  background-color: #48556a;
+  color: #fff;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+  background-color: aqua;
+}
+
+.logo img{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.heading h3{
+  font-size: small;
+}
+.heading p{
+  font-size: xx-small;
+  opacity: 0.5;
+}
+
+.template p{
+  font-size: small;
+  opacity: 0.5;
+}
+
+
+
+
+/* 3-4 break points  */
+
+@media screen and (max-width:1000px){
+ 
+  .template-grid {
+    grid-template-areas:
+                "a a b"
+                "e e e"
+                "c d d";
+
+                width: 60%;
+  }
+
+}
+
+@media screen and (max-width:700px){
+
+  .template-grid {
+    grid-template-areas:
+                "a a"
+                "b e"
+                "c e"
+                "d d";
+
+    width: 55%;
+     }
+
+
+}
+
+  </style>
+</head>
+
+<body>
+  <main class="template-grid">
+    <div class="template  a">
+      <div class="heading">
+        <div class="logo">
+          <img src="https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/image-daniel.jpg" alt="img">
+        </div>
+        <div>
+          <h3 >Daniel Clifford</h3>
+          <p >Verified Graduate</p>
+        </div>
+      </div>
+      <h4>
+        I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
+      </h4>
+      <p>
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
+    </div>
+    <div class="template  b">
+      <div  class="heading">
+        <div class="logo">
+          <img  src="https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/image-daniel.jpg" alt="img">
+        </div>
+        <div>
+          <h3 >Jonathan Walters</h3>
+          <p >Verified Graduate</p>
+        </div>
+      </div>
+      <h4>
+        The team was very supportive and kept me motivated
+      </h4>
+      <p>
+        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”
+      </p>
+    </div>
+    <div class="template  c">
+      <div  >
+        <div>
+          <img  src="" alt="img">
+        </div>
+        <div>
+          <h2 >Heading</h2>
+          <p >Sub head</p>
+        </div>
+      </div>
+      <p>
+    Lorem ipsum dolor sit amet consectetur adip quae illum, architecto qui. Molesti
+      </p>
+      <p>
+       Lorem ipsum dolor, sit ndi autem culpa labore amet dolor ratione illo dolorum nostrum sunt. Illo, exercitationem?
+      </p>
+    </div>
+    <div class="template  d">
+      <div  >
+        <div>
+          <img  src="" alt="img">
+        </div>
+        <div>
+          <h2 >Heading</h2>
+          <p >Sub head</p>
+        </div>
+      </div>
+      <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quia sed enim quae illum, architecto qui. Molesti
+      </p>
+      <p>
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ullam excepturi quae, harum natus consectetur temporibus delectus eligendi autem culpa labore amet dolor ratione illo dolorum nostrum sunt. Illo, exercitationem?
+      </p>
+    </div>
+    <div class="template  e">
+      <div  >
+        <div>
+          <img  src="" alt="img">
+        </div>
+        <div>
+          <h2 >Heading</h2>
+          <p >Sub head</p>
+        </div>
+      </div>
+      <p>
+    Lorem ipsum dolor sit ametarchitecto qui. Molesti
+      </p>
+      <p>
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ullam excepturi quae, harum natus consectetur 
+      </p>
+    </div>
+  
+   
+  </main>
+
+
+
+
+</body>
+
+</html>

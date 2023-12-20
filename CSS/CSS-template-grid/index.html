@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            width: 100%;
+            place-content: center;
+        }
+
+        .template-grid{
+            width: 600px;
+            height: 400px;
+            border: 1px solid black;
+            display:grid;
+            grid-auto-columns: 1fr;
+            gap: 1.2rem;
+            grid-template-areas: "a a"
+                                  "b c"
+                                  "d d"
+                                  "e e";
+            margin: 0 auto;
+        }
+
+        .template{
+            background-color: aqua;
+        }
+        .a{
+            grid-area: a;
+            background-color: aqua;
+        }
+        .b{
+            grid-area: b;
+            background-color: rgb(79, 110, 195);
+        }
+        .c{
+            grid-area: c;
+            background-color: rgb(79, 110, 195);
+        }
+        .d{
+            grid-area: d;
+        }
+        .e{
+            grid-area: e;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="template-grid">
+            <!-- 1st card  -->
+            <div class="template a">
+                <div class="flex">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi voluptatem impedit iste eum in dolor maxime
+                </div>
+            </div>
+            <div class="template b">
+                <div class="flex">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi voluptatem impedit iste eum in dolor maxime
+                </div>
+            </div>
+            <div class="template c">
+                <div class="flex">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi voluptatem impedit iste eum in dolor maxime
+                </div>
+            </div>
+            <div class="template d">
+                <div class="flex">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi voluptatem impedit iste eum in dolor maxime
+                </div>
+            </div>
+            <div class="template e">
+                <div class="flex">
+                   E
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
